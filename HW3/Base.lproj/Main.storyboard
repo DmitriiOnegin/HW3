@@ -46,7 +46,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="ROj-9y-gN1"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SFt-ax-jew">
                                                 <rect key="frame" x="0.0" y="64" width="300" height="34"/>
@@ -66,7 +66,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="logInAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="tSW-5a-dex"/>
-                                            <segue destination="E0a-gb-djb" kind="presentation" modalPresentationStyle="fullScreen" id="O3k-Wv-6b0"/>
+                                            <segue destination="E0a-gb-djb" kind="presentation" identifier="main" modalPresentationStyle="fullScreen" id="O3k-Wv-6b0"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yGV-pu-b4P">
