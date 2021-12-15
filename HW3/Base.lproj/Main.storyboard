@@ -23,22 +23,22 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kcL-k2-LEW">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="98"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kb9-Eo-goh">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kb9-Eo-goh">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="kb9-Eo-goh" secondAttribute="height" multiplier="150:17" id="C10-tE-xsn"/>
-                                                    <constraint firstAttribute="width" constant="300" id="ROj-9y-gN1"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="ROj-9y-gN1"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SFt-ax-jew">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SFt-ax-jew">
                                                 <rect key="frame" x="0.0" y="64" width="300" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="SFt-ax-jew" secondAttribute="height" multiplier="150:17" id="lAZ-Es-aPa"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -52,23 +52,23 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yGV-pu-b4P">
                                         <rect key="frame" x="6" y="193.5" width="288" height="28.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxc-S5-4D2">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxc-S5-4D2">
                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="28.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="140" id="3hS-4x-0W1"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="3hS-4x-0W1"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
                                                 </buttonConfiguration>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aku-Ay-xhq">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aku-Ay-xhq">
                                                 <rect key="frame" x="148" y="0.0" width="140" height="28.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="140" id="zNa-9e-dbl"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="zNa-9e-dbl"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Forgot Password">
+                                                <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
                                                 </buttonConfiguration>
                                             </button>
