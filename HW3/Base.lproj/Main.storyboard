@@ -66,7 +66,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="logInAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="tSW-5a-dex"/>
-                                            <segue destination="E0a-gb-djb" kind="show" id="Kp0-kD-5K5"/>
+                                            <segue destination="E0a-gb-djb" kind="presentation" modalPresentationStyle="fullScreen" id="O3k-Wv-6b0"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yGV-pu-b4P">
@@ -100,11 +100,11 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="rfo-6x-fFf"/>
                         <color key="backgroundColor" systemColor="systemGray3Color"/>
                         <constraints>
                             <constraint firstItem="JiL-N8-FNK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2F2-ed-xQK"/>
-                            <constraint firstItem="JiL-N8-FNK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JgK-Uq-yW3"/>
+                            <constraint firstItem="JiL-N8-FNK" firstAttribute="centerX" secondItem="rfo-6x-fFf" secondAttribute="centerX" id="JgK-Uq-yW3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TFV-Yq-WaA"/>
@@ -126,7 +126,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, Misha!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsU-ES-dno">
-                                <rect key="frame" x="69.5" y="233" width="275" height="29"/>
+                                <rect key="frame" x="69.5" y="189" width="275" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="275" id="jFt-EN-Mgd"/>
                                 </constraints>
@@ -135,12 +135,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fw7-Ye-qCd">
-                                <rect key="frame" x="165.5" y="730" width="83" height="36"/>
+                                <rect key="frame" x="161.5" y="730" width="91.5" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="83" id="B4o-AO-0dq"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                <buttonConfiguration key="configuration" style="plain" title="Log Out">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -149,13 +149,13 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="Eo5-pX-b4n"/>
+                        <viewLayoutGuide key="safeArea" id="OdX-e3-UfW"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
-                            <constraint firstItem="Eo5-pX-b4n" firstAttribute="bottom" secondItem="Fw7-Ye-qCd" secondAttribute="bottom" constant="96" id="7Gm-bL-8Ns"/>
-                            <constraint firstItem="BsU-ES-dno" firstAttribute="centerX" secondItem="aHY-h0-8pc" secondAttribute="centerX" id="Mob-ge-EFo"/>
-                            <constraint firstItem="Fw7-Ye-qCd" firstAttribute="centerX" secondItem="aHY-h0-8pc" secondAttribute="centerX" id="j83-VK-Bzk"/>
-                            <constraint firstItem="BsU-ES-dno" firstAttribute="top" secondItem="Eo5-pX-b4n" secondAttribute="top" constant="145" id="zPK-pt-Kdb"/>
+                            <constraint firstItem="OdX-e3-UfW" firstAttribute="bottom" secondItem="Fw7-Ye-qCd" secondAttribute="bottom" constant="96" id="7Gm-bL-8Ns"/>
+                            <constraint firstItem="BsU-ES-dno" firstAttribute="centerX" secondItem="OdX-e3-UfW" secondAttribute="centerX" id="Mob-ge-EFo"/>
+                            <constraint firstItem="Fw7-Ye-qCd" firstAttribute="centerX" secondItem="OdX-e3-UfW" secondAttribute="centerX" id="j83-VK-Bzk"/>
+                            <constraint firstItem="BsU-ES-dno" firstAttribute="top" secondItem="OdX-e3-UfW" secondAttribute="top" constant="145" id="zPK-pt-Kdb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bmt-UY-xSA"/>

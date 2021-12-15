@@ -12,21 +12,24 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        let welcomeVC = segue.destination as! WelcomeViewController
+        welcomeVC.userName = userNameTextField.text
     }
     
     @IBAction func logInAction() {
+        
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        guard let welcomeVC = segue.source as? WelcomeViewController else { return }
-        
+
+        userNameTextField.text = ""
+        passwordTextField.text = ""
     }
 }
 

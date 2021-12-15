@@ -16,6 +16,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        welcomeTextField.text = "Welcome, " + userName + "!"
     }
 
     @IBAction func logOutAction() {
