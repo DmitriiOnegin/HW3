@@ -81,6 +81,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="forgotNameAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="kAa-tO-Oag"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aku-Ay-xhq">
                                                 <rect key="frame" x="148" y="0.0" width="140" height="28.5"/>
@@ -91,6 +94,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="forgotPasswordAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="90q-cq-oEZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
