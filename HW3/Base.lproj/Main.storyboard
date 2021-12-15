@@ -65,6 +65,7 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
                                         </buttonConfiguration>
                                         <connections>
+                                            <action selector="logInAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="tSW-5a-dex"/>
                                             <segue destination="E0a-gb-djb" kind="show" id="Kp0-kD-5K5"/>
                                         </connections>
                                     </button>
@@ -107,6 +108,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TFV-Yq-WaA"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="SFt-ax-jew" id="SgG-UD-qKY"/>
+                        <outlet property="userNameTextField" destination="kb9-Eo-goh" id="4XW-K4-N1V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,6 +143,10 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="logOutAction" destination="E0a-gb-djb" eventType="touchUpInside" id="LQX-Fq-02p"/>
+                                    <segue destination="8Vq-7c-JKk" kind="unwind" unwindAction="unwindFor:" id="0Yn-yL-Lsa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Eo5-pX-b4n"/>
@@ -150,8 +159,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bmt-UY-xSA"/>
+                    <connections>
+                        <outlet property="welcomeTextField" destination="BsU-ES-dno" id="6ok-UX-fGB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w81-uP-ELx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="8Vq-7c-JKk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="800.00000000000011" y="97.767857142857139"/>
         </scene>
