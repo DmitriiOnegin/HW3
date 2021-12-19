@@ -177,7 +177,7 @@
         <!--Резюме-->
         <scene sceneID="xn0-df-dDp">
             <objects>
-                <viewController id="IRp-Br-4Z3" sceneMemberID="viewController">
+                <viewController id="IRp-Br-4Z3" customClass="AboutMeViewController" customModule="HW3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z6X-9V-Lu1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -199,9 +199,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Резюме" id="XSC-ps-IDg">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="lEm-7c-DXT"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="yEt-B4-2US"/>
+                        <barButtonItem key="leftBarButtonItem" title="Назад" id="lEm-7c-DXT">
+                            <connections>
+                                <action selector="returnButton" destination="IRp-Br-4Z3" id="9c4-8m-i2e"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Далее" id="yEt-B4-2US">
+                            <connections>
+                                <action selector="nextButtton" destination="IRp-Br-4Z3" id="5kw-rV-GdG"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nextButtonLabel" destination="yEt-B4-2US" id="cIg-MC-ufx"/>
+                        <outlet property="returnButtonLabel" destination="lEm-7c-DXT" id="AkD-8m-gVA"/>
+                        <outlet property="textLabel" destination="DHE-qS-tx6" id="dCP-mP-bxi"/>
+                        <outlet property="titleLabel" destination="XSC-ps-IDg" id="U6U-md-5NI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wk5-j6-mZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

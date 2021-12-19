@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		194D31F8276F0E6500D4AFA3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194D31F7276F0E6500D4AFA3 /* User.swift */; };
+		194D31FC276F82A300D4AFA3 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194D31FB276F82A200D4AFA3 /* AboutMeViewController.swift */; };
 		19917CF1276A74CF00CD0DCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19917CF0276A74CF00CD0DCD /* AppDelegate.swift */; };
 		19917CF3276A74CF00CD0DCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19917CF2276A74CF00CD0DCD /* SceneDelegate.swift */; };
 		19917CF5276A74CF00CD0DCD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19917CF4276A74CF00CD0DCD /* LoginViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		194D31F7276F0E6500D4AFA3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		194D31FB276F82A200D4AFA3 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		19917CED276A74CF00CD0DCD /* HW3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19917CF0276A74CF00CD0DCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19917CF2276A74CF00CD0DCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				19917CF4276A74CF00CD0DCD /* LoginViewController.swift */,
+				194D31FB276F82A200D4AFA3 /* AboutMeViewController.swift */,
 				19917D04276A812900CD0DCD /* WelcomeViewController.swift */,
 			);
 			path = ViewControllers;
@@ -188,6 +191,7 @@
 				19917D05276A812900CD0DCD /* WelcomeViewController.swift in Sources */,
 				19917CF1276A74CF00CD0DCD /* AppDelegate.swift in Sources */,
 				194D31F8276F0E6500D4AFA3 /* User.swift in Sources */,
+				194D31FC276F82A300D4AFA3 /* AboutMeViewController.swift in Sources */,
 				19917CF3276A74CF00CD0DCD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

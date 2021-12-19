@@ -12,8 +12,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    let userName = "User"
-    let password = "password"
+//    let userName = "User"
+//    let password = "password"
+    let user = User.getUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +31,12 @@ class LoginViewController: UIViewController {
         let viewControllers = tabBarController.children
         for viewController in viewControllers {
                     if let welcomeVC = viewController as? WelcomeViewController {
-                        welcomeVC.userName = userNameTextField.text
+                        welcomeVC.userName = user.person.firstName
+                        
                     } else if let navigationVC = viewController as? UINavigationController {
-//                        let aboutUserVC = navigationVC.topViewController as! AboutMeViewController
+                        
+                        let aboutUserVC = navigationVC.topViewController as! AboutMeViewController
+                        aboutUserVC.user = user
                     }
                 }
        
@@ -40,13 +44,13 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func logInAction() {
-        guard let inputName = userNameTextField.text, inputName == userName else {
+        guard let inputName = userNameTextField.text, inputName == user.userName else {
             showAlert(title: "You name is not right", message: "Plase enter your name")
             userNameTextField.text = ""
             passwordTextField.text = ""
             return
         }
-        guard let inputPassword = passwordTextField.text, inputPassword == password else {
+        guard let inputPassword = passwordTextField.text, inputPassword == user.password else {
             showAlert(title: "You password is not right", message: "Plase enter your password")
             passwordTextField.text = ""
             return
@@ -55,11 +59,11 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func forgotNameAlert() {
-        showAlert(title: "Forgot Name?", message: "You name: \(userName)")
+        showAlert(title: "Forgot Name?", message: "You name: \(user.userName)")
     }
     
     @IBAction func forgotPasswordAlert() {
-        showAlert(title: "Forgot password?", message: "You password: \(password)")
+        showAlert(title: "Forgot password?", message: "You password: \(user.password)")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
