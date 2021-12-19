@@ -7,8 +7,8 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, UITextFieldDelegate {
-
+class LoginViewController: UIViewController {
+    
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -30,9 +30,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         welcomeVC.userName = userNameTextField.text
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super .touchesBegan(touches, with: event)
-    }
     
     @IBAction func logInAction() {
         guard let inputName = userNameTextField.text, inputName == userName else {
@@ -58,26 +55,39 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-
+        
         userNameTextField.text = ""
         passwordTextField.text = ""
+    }
+    
+    
+}
+
+// MARK: - extension
+extension LoginViewController {
+    private func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
+            
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         if textField.tag == 0 {
             
-            let nextTag = textField.tag + 1
+            passwordTextField.becomeFirstResponder()
             
-            let nextResponder = textField.superview?.viewWithTag(nextTag) as UIResponder?
-            
-            if nextResponder != nil {
-                
-                nextResponder?.becomeFirstResponder()
-            } else {
-                
-                textField.resignFirstResponder()
-            }
         } else {
             
             logInAction()
@@ -87,16 +97,3 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         return false
     }
 }
-
-// MARK: - extension
-extension LoginViewController {
-    private func showAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
-           
-        }
-        alert.addAction(okAction)
-        present(alert, animated: true)
-    }
-}
-
