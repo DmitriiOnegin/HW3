@@ -22,6 +22,10 @@ class AboutMeViewController: UIViewController {
         textLabel.text = user.person.resume
         titleLabel.title = TitleNC.resume.rawValue
         setIsNotEnabledReturnButton()
+        
+    }
+    override func viewDidLayoutSubviews() {
+        textLabel.sizeToFit()
     }
     
     
@@ -36,13 +40,12 @@ class AboutMeViewController: UIViewController {
             textLabel.text = user.person.team
             setIsNotEnabledNextButton()
         default:
-            textLabel.text = "default"
+            return
         }
     }
     
     @IBAction func returnButton() {
         switch textLabel.text {
-
         case user.person.task:
             setIsNotEnabledReturnButton()
             titleLabel.title = TitleNC.resume.rawValue
@@ -52,7 +55,7 @@ class AboutMeViewController: UIViewController {
             textLabel.text = user.person.task
             setIsEnabledNextButton()
         default:
-            textLabel.text = "default"
+            return
         }
     }
     

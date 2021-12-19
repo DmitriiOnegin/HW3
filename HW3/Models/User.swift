@@ -13,8 +13,7 @@ struct User {
     let person: Person
     
     static func getUser() -> User {
-       // User(userName: "User", password: "password", person: Person.getPerson())
-        User(userName: "1", password: "1", person: Person.getPerson())
+        User(userName: "User", password: "password", person: Person.getPerson())
     }
 }
 
