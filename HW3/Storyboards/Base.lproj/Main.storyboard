@@ -150,7 +150,6 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="logOutAction" destination="E0a-gb-djb" eventType="touchUpInside" id="LQX-Fq-02p"/>
                                     <segue destination="8Vq-7c-JKk" kind="unwind" unwindAction="unwindFor:" id="0Yn-yL-Lsa"/>
                                 </connections>
                             </button>

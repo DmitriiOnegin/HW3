@@ -19,9 +19,6 @@ class WelcomeViewController: UIViewController {
         welcomeTextField.text = "Welcome, " + userName + "!"
     }
 
-    @IBAction func logOutAction() {
-        dismiss(animated: true)
-    }
     
 }
 
